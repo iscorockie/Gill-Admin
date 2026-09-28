@@ -1,0 +1,5 @@
+# Keep application configuration and dependencies out of direct web access.
+Options -Indexes
+<FilesMatch "^(config\.php|config\.example\.php|composer\.(json|lock))$">
+  Require all denied
+</FilesMatch>
